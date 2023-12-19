@@ -16,6 +16,8 @@ class MaterialCard(models.Model):
     description = models.TextField()
     anisotropic = models.CharField(max_length=50, choices=Anisotropy.choices, default='') 
     uploadImage = models.FileField(upload_to='logos', default='logos/logo.png')
+    youngModulus = models.IntegerField(default=0)
+    possionRatio = models.IntegerField(default=0)
 
     def _str_(self):
         return self.title

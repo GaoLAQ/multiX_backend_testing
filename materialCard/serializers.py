@@ -4,4 +4,4 @@ from .models import MaterialCard
 class MaterialCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = MaterialCard
-        fields = ('id','title', 'uploadImage', 'description', 'anisotropic', 'materialType' )  
+        fields = ('id','title', 'uploadImage', 'description', 'anisotropic', 'materialType', 'youngModulus','possionRatio')  
