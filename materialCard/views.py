@@ -8,3 +8,4 @@ from .models import MaterialCard
 class MaterialCardView(viewsets.ModelViewSet):
     serializer_class = MaterialCardSerializer
     queryset = MaterialCard.objects.all()
+
